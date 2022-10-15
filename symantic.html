@@ -64,13 +64,39 @@
        </tfoot>
      </table>
      </main>
+   <article>
+     <p>
+       <strong>sttrong</strong>과
+       <b>b</b>의 차이가 느껴지십니까?
+       혹은
+       <em>em</em>과 
+       <i>i</i>의 차이가 느껴지십니까?
+     </p>
+   </article>
+  <article>
    <form>
     <article>
      <h2>당신의 의견을 제출하세요</h2>
      <form action="#" method="post">
+       <label for="u-name">유저네임</label>
+       <input type="text" id="uname" name="umane">
+       <label for="u-pw">패스워드</label>
+       <input type="password" id="u-pw" name="u-pw">
+       <span>의견</span>
        <input type="text" id="opinion" name="opinion">
-   </article>
+       <input type="submit">
+       <button type="reset">취소</button>
+      
+       <label for="user-movie">Choose your favorite movie</label>
+       <input list="movies" id="user-movie" name="movie">
+       <datalist id="movies">
+       <option value="Dune"></option>
+       <option value="Arrival"></option>
+       <option value="Blade Runner 2049"></option>
+       </datalist>
       </form>
+   </article>
+     <!-- 반복 나열되는 컨텐츠 표현을 위한 article -->
      <article id="featured-posts">
        <article class="featured-post">
          <h2> 은하 13 출시임박</h2>
@@ -78,7 +104,10 @@
        <article class="featured-post">
          <h2>어른폰 14 싸게 사는 법</h2>
        </article>
+       <p><iframe src="https://www.google.com/" id="google-home" name="google-home" frameborder="1" width="320" height="240" scrolling="auto" title="구글 웹사이트">프레임이 지원되지 않는 환경입니다.
+<a href="https://www.google.com/">https://www.google.com/</a> 페이지를 방문하여 주세요.</iframe></p>
     </article>
+     <!-- 사이드 메뉴, 컨텐츠 표현을 위한 aside -->
      <aside>
        <h2>Featured comments</h2>
        <ul>
